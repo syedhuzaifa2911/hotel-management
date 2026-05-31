@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Checkbox() {
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
-  const [guests, setGuests] = useState(1);
-
+function Checkbox({
+  checkIn,
+  setCheckIn,
+  checkOut,
+  setCheckOut,
+  guests,
+  setGuests,
+  checkAvailability,
+}) {
   return (
     <div className="mt-8 bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+
       <h3 className="text-xl font-semibold mb-5">
         Check Availability
       </h3>
@@ -52,9 +57,9 @@ function Checkbox() {
             onChange={(e) => setGuests(Number(e.target.value))}
             className="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-black"
           >
-            {[1, 2, 3, 4, 5, 6].map((guest) => (
-              <option key={guest} value={guest}>
-                {guest} Guest{guest > 1 ? "s" : ""}
+            {[1, 2, 3, 4, 5, 6].map((g) => (
+              <option key={g} value={g}>
+                {g} Guest{g > 1 ? "s" : ""}
               </option>
             ))}
           </select>
@@ -62,7 +67,10 @@ function Checkbox() {
 
         {/* Button */}
         <div className="flex items-end">
-          <button className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition">
+          <button
+            onClick={checkAvailability}
+            className="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition"
+          >
             Check Availability
           </button>
         </div>

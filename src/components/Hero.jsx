@@ -1,5 +1,5 @@
 import React from "react";
-import Booking from "./Booking";
+import HeroSearch from "./HeroSearch";
 
 function Hero() {
   return (
@@ -28,7 +28,7 @@ function Hero() {
           Discover and book premium hotels worldwide with seamless search,
           comparison, and instant booking experience.
         </p>
-      <Booking/>
+      <HeroSearch/>
       </div>
     </section>
   );
