@@ -8,36 +8,20 @@ export const hotels = [
     isBest: true,
     locationTag: "Near Clifton Beach, Karachi",
     bedType: "Mixed",
-
     images: [
-      "https://images.unsplash.com/photo-1615874959474-d609969a20ed",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-      "https://images.unsplash.com/photo-1501183638710-841dd1904471",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
+      
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 20000,
-        maxGuests: 2,
-        totalRooms: 10,
-        availableRooms: 10,
-      },
-      {
-        type: "Deluxe",
-        bedType: "Double Bed",
-        pricePerNight: 34200,
-        maxGuests: 4,
-        totalRooms: 6,
-        availableRooms: 6,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 20000, maxGuests: 2, totalRooms: 10, availableRooms: 10 },
+      { type: "Deluxe", bedType: "Double Bed", pricePerNight: 34200, maxGuests: 4, totalRooms: 6, availableRooms: 6 },
     ],
     availableFrom: "2026-02-01",
     availableTo: "2026-11-30",
   },
-
   {
     id: 2,
     name: "Ocean View Resort",
@@ -47,36 +31,19 @@ export const hotels = [
     isBest: true,
     locationTag: "Near Sea View Road, Karachi",
     bedType: "Double",
-
     images: [
-      "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8",
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461",
-      "https://images.unsplash.com/photo-1551887373-6a8d6f2a0d0a",
-      "https://images.unsplash.com/photo-1554995207-c18c203602cb",
+      "https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg",
+      "https://i.pinimg.com/736x/0c/2b/b8/0c2bb86f4e3655204f6f9ff1c1df1acf.jpg",
+      "https://i.pinimg.com/1200x/72/e6/f1/72e6f17742e1e35bad16e9602112bbe0.jpg",
+      "https://i.pinimg.com/736x/38/4c/9e/384c9ec66800c9d7c0b123027969af72.jpg",
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 90,
-        maxGuests: 2,
-        totalRooms: 8,
-        availableRooms: 8,
-      },
-      {
-        type: "Suite",
-        bedType: "Double Bed",
-        pricePerNight: 180,
-        maxGuests: 5,
-        totalRooms: 4,
-        availableRooms: 4,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 9000, maxGuests: 2, totalRooms: 8, availableRooms: 8 },
+      { type: "Suite", bedType: "Double Bed", pricePerNight: 18000, maxGuests: 5, totalRooms: 4, availableRooms: 4 },
     ],
     availableFrom: "2026-01-15",
     availableTo: "2026-12-10",
   },
-
   {
     id: 3,
     name: "Pearl Residency",
@@ -86,36 +53,19 @@ export const hotels = [
     isBest: true,
     locationTag: "Near Mall Road, Lahore",
     bedType: "Mixed",
-
     images: [
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427",
-      "https://images.unsplash.com/photo-1560448075-bb485b067938",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 75,
-        maxGuests: 2,
-        totalRooms: 15,
-        availableRooms: 15,
-      },
-      {
-        type: "Family",
-        bedType: "Double Bed",
-        pricePerNight: 210,
-        maxGuests: 6,
-        totalRooms: 3,
-        availableRooms: 3,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 7500, maxGuests: 2, totalRooms: 15, availableRooms: 15 },
+      { type: "Family", bedType: "Double Bed", pricePerNight: 21000, maxGuests: 6, totalRooms: 3, availableRooms: 3 },
     ],
     availableFrom: "2026-03-01",
     availableTo: "2026-10-31",
   },
-
   {
     id: 4,
     name: "Grand Crown",
@@ -125,28 +75,18 @@ export const hotels = [
     isBest: false,
     locationTag: "Near Liberty Market, Lahore",
     bedType: "Double",
-
     images: [
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267",
-      "https://images.unsplash.com/photo-1525275305851-d7b8f3f5f0a0",
-      "https://images.unsplash.com/photo-1505692952047-1a78307da8f2",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 70,
-        maxGuests: 2,
-        totalRooms: 12,
-        availableRooms: 12,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 7000, maxGuests: 2, totalRooms: 12, availableRooms: 12 },
     ],
     availableFrom: "2026-01-10",
     availableTo: "2026-09-30",
   },
-
   {
     id: 5,
     name: "Mountain Breeze",
@@ -156,28 +96,18 @@ export const hotels = [
     isBest: true,
     locationTag: "Near Mall Road, Murree",
     bedType: "Mixed",
-
     images: [
-      "https://images.unsplash.com/photo-1518733057094-95b53143d2a7",
-      "https://images.unsplash.com/photo-1501117716987-c8e1ecb210e0",
-      "https://images.unsplash.com/photo-1560184897-502a475f7a0d",
-      "https://images.unsplash.com/photo-1540518614846-7eded433c457",
+            "https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg",
+      "https://i.pinimg.com/736x/0c/2b/b8/0c2bb86f4e3655204f6f9ff1c1df1acf.jpg",
+      "https://i.pinimg.com/1200x/72/e6/f1/72e6f17742e1e35bad16e9602112bbe0.jpg",
+      "https://i.pinimg.com/736x/38/4c/9e/384c9ec66800c9d7c0b123027969af72.jpg",
     ],
-
     rooms: [
-      {
-        type: "Deluxe",
-        bedType: "Double Bed",
-        pricePerNight: 140,
-        maxGuests: 4,
-        totalRooms: 6,
-        availableRooms: 6,
-      },
+      { type: "Deluxe", bedType: "Double Bed", pricePerNight: 14000, maxGuests: 4, totalRooms: 6, availableRooms: 6 },
     ],
     availableFrom: "2026-05-01",
     availableTo: "2026-09-15",
   },
-
   {
     id: 6,
     name: "Hilltop Retreat",
@@ -187,28 +117,18 @@ export const hotels = [
     isBest: false,
     locationTag: "Near Patriata Chairlift, Murree",
     bedType: "Single",
-
     images: [
-      "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-      "https://images.unsplash.com/photo-1501183638710-841dd1904471",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 100,
-        maxGuests: 2,
-        totalRooms: 9,
-        availableRooms: 9,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 10000, maxGuests: 2, totalRooms: 9, availableRooms: 9 },
     ],
     availableFrom: "2026-04-01",
     availableTo: "2026-10-15",
   },
-
   {
     id: 7,
     name: "Capital Heights",
@@ -218,28 +138,18 @@ export const hotels = [
     isBest: true,
     locationTag: "Near F-6 Markaz, Islamabad",
     bedType: "Mixed",
-
     images: [
-      "https://images.unsplash.com/photo-1551887373-6a8d6f2a0d0a",
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
-      "https://images.unsplash.com/photo-1505692794403-34d4982e3e2d",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
     ],
-
     rooms: [
-      {
-        type: "Suite",
-        bedType: "Double Bed",
-        pricePerNight: 190,
-        maxGuests: 5,
-        totalRooms: 5,
-        availableRooms: 5,
-      },
+      { type: "Suite", bedType: "Double Bed", pricePerNight: 19000, maxGuests: 5, totalRooms: 5, availableRooms: 5 },
     ],
     availableFrom: "2026-01-01",
     availableTo: "2026-12-31",
   },
-
   {
     id: 8,
     name: "Blue Sky Hotel",
@@ -249,28 +159,18 @@ export const hotels = [
     isBest: false,
     locationTag: "Near Blue Area, Islamabad",
     bedType: "Double",
-
     images: [
-      "https://images.unsplash.com/photo-1551887373-6a8d6f2a0d0a",
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353",
-      "https://images.unsplash.com/photo-1505692794403-34d4982e3e2d",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+            "https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg",
+      "https://i.pinimg.com/736x/0c/2b/b8/0c2bb86f4e3655204f6f9ff1c1df1acf.jpg",
+      "https://i.pinimg.com/1200x/72/e6/f1/72e6f17742e1e35bad16e9602112bbe0.jpg",
+      "https://i.pinimg.com/736x/38/4c/9e/384c9ec66800c9d7c0b123027969af72.jpg",
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 85,
-        maxGuests: 2,
-        totalRooms: 10,
-        availableRooms: 10,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 8500, maxGuests: 2, totalRooms: 10, availableRooms: 10 },
     ],
     availableFrom: "2026-02-15",
     availableTo: "2026-11-01",
   },
-
   {
     id: 9,
     name: "Desert Pearl",
@@ -280,28 +180,18 @@ export const hotels = [
     isBest: false,
     locationTag: "Near Noor Mahal, Bahawalpur",
     bedType: "Single",
-
     images: [
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
-      "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-      "https://images.unsplash.com/photo-1501183638710-841dd1904471",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 65,
-        maxGuests: 2,
-        totalRooms: 13,
-        availableRooms: 13,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 6500, maxGuests: 2, totalRooms: 13, availableRooms: 13 },
     ],
     availableFrom: "2026-03-15",
     availableTo: "2026-10-01",
   },
-
   {
     id: 10,
     name: "Sunrise Inn",
@@ -311,25 +201,226 @@ export const hotels = [
     isBest: false,
     locationTag: "Near Cantt Area, Multan",
     bedType: "Mixed",
-
     images: [
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a",
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427",
-      "https://images.unsplash.com/photo-1560448075-bb485b067938",
-      "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
     ],
-
     rooms: [
-      {
-        type: "Standard",
-        bedType: "Single Bed",
-        pricePerNight: 60,
-        maxGuests: 2,
-        totalRooms: 16,
-        availableRooms: 16,
-      },
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 6000, maxGuests: 2, totalRooms: 16, availableRooms: 16 },
     ],
     availableFrom: "2026-01-20",
     availableTo: "2026-12-01",
+  },
+  {
+    id: 11,
+    name: "Sapphire Suites",
+    city: "Karachi",
+    rating: 4.6,
+    stars: 5,
+    isBest: false,
+    locationTag: "Near Shahrah-e-Faisal, Karachi",
+    bedType: "Mixed",
+    images: [
+            "https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg",
+      "https://i.pinimg.com/736x/0c/2b/b8/0c2bb86f4e3655204f6f9ff1c1df1acf.jpg",
+      "https://i.pinimg.com/1200x/72/e6/f1/72e6f17742e1e35bad16e9602112bbe0.jpg",
+      "https://i.pinimg.com/736x/38/4c/9e/384c9ec66800c9d7c0b123027969af72.jpg",
+    ],
+    rooms: [
+      { type: "Deluxe", bedType: "Double Bed", pricePerNight: 15000, maxGuests: 4, totalRooms: 7, availableRooms: 7 },
+    ],
+    availableFrom: "2026-02-10",
+    availableTo: "2026-11-20",
+  },
+  {
+    id: 12,
+    name: "Emerald Towers",
+    city: "Lahore",
+    rating: 4.7,
+    stars: 5,
+    isBest: true,
+    locationTag: "Near Gulberg, Lahore",
+    bedType: "Double",
+    images: [
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
+    ],
+    rooms: [
+      { type: "Suite", bedType: "Double Bed", pricePerNight: 22000, maxGuests: 5, totalRooms: 5, availableRooms: 5 },
+    ],
+    availableFrom: "2026-01-05",
+    availableTo: "2026-12-20",
+  },
+  {
+    id: 13,
+    name: "Golden Sands",
+    city: "Karachi",
+    rating: 4.4,
+    stars: 4,
+    isBest: false,
+    locationTag: "Near DHA Phase 6, Karachi",
+    bedType: "Single",
+    images: [
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
+    ],
+    rooms: [
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 7200, maxGuests: 2, totalRooms: 11, availableRooms: 11 },
+    ],
+    availableFrom: "2026-02-20",
+    availableTo: "2026-10-25",
+  },
+  {
+    id: 14,
+    name: "Silver Crest",
+    city: "Islamabad",
+    rating: 4.5,
+    stars: 4,
+    isBest: false,
+    locationTag: "Near G-9 Markaz, Islamabad",
+    bedType: "Mixed",
+    images: [
+            "https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg",
+      "https://i.pinimg.com/736x/0c/2b/b8/0c2bb86f4e3655204f6f9ff1c1df1acf.jpg",
+      "https://i.pinimg.com/1200x/72/e6/f1/72e6f17742e1e35bad16e9602112bbe0.jpg",
+      "https://i.pinimg.com/736x/38/4c/9e/384c9ec66800c9d7c0b123027969af72.jpg",
+    ],
+    rooms: [
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 8000, maxGuests: 2, totalRooms: 9, availableRooms: 9 },
+    ],
+    availableFrom: "2026-03-05",
+    availableTo: "2026-11-15",
+  },
+  {
+    id: 15,
+    name: "Lakeview Lodge",
+    city: "Murree",
+    rating: 4.9,
+    stars: 5,
+    isBest: true,
+    locationTag: "Near Kashmir Point, Murree",
+    bedType: "Double",
+    images: [
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
+    ],
+    rooms: [
+      { type: "Deluxe", bedType: "Double Bed", pricePerNight: 16500, maxGuests: 4, totalRooms: 6, availableRooms: 6 },
+    ],
+    availableFrom: "2026-04-10",
+    availableTo: "2026-09-30",
+  },
+  {
+    id: 16,
+    name: "Crystal Inn",
+    city: "Multan",
+    rating: 4.2,
+    stars: 3,
+    isBest: false,
+    locationTag: "Near Multan Cantt, Multan",
+    bedType: "Single",
+    images: [
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
+    ],
+    rooms: [
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 5000, maxGuests: 2, totalRooms: 14, availableRooms: 14 },
+    ],
+    availableFrom: "2026-01-25",
+    availableTo: "2026-12-15",
+  },
+  {
+    id: 17,
+    name: "Falcon Heights",
+    city: "Lahore",
+    rating: 4.6,
+    stars: 4,
+    isBest: false,
+    locationTag: "Near Johar Town, Lahore",
+    bedType: "Mixed",
+    images: [
+            "https://i.pinimg.com/736x/a1/74/dd/a174dd36b0d4884c9be19c591d0e86e6.jpg",
+      "https://i.pinimg.com/736x/0c/2b/b8/0c2bb86f4e3655204f6f9ff1c1df1acf.jpg",
+      "https://i.pinimg.com/1200x/72/e6/f1/72e6f17742e1e35bad16e9602112bbe0.jpg",
+      "https://i.pinimg.com/736x/38/4c/9e/384c9ec66800c9d7c0b123027969af72.jpg",
+    ],
+    rooms: [
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 7800, maxGuests: 2, totalRooms: 10, availableRooms: 10 },
+    ],
+    availableFrom: "2026-02-05",
+    availableTo: "2026-11-10",
+  },
+  {
+    id: 18,
+    name: "Marina Bay Hotel",
+    city: "Karachi",
+    rating: 4.8,
+    stars: 5,
+    isBest: true,
+    locationTag: "Near Marina Club, Karachi",
+    bedType: "Double",
+    images: [
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
+    ],
+    rooms: [
+      { type: "Suite", bedType: "Double Bed", pricePerNight: 25000, maxGuests: 5, totalRooms: 4, availableRooms: 4 },
+    ],
+    availableFrom: "2026-01-30",
+    availableTo: "2026-12-25",
+  },
+  {
+    id: 19,
+    name: "Heritage Palace",
+    city: "Bahawalpur",
+    rating: 4.7,
+    stars: 5,
+    isBest: true,
+    locationTag: "Near Darbar Mahal, Bahawalpur",
+    bedType: "Mixed",
+    images: [
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/27/17/1a/27171a54885f2ffb81e5a2c8b664d997.jpg",
+      "https://i.pinimg.com/736x/3f/69/8b/3f698bc9766d1150b80be2779192778a.jpg",
+      "https://i.pinimg.com/736x/8b/6e/e2/8b6ee23298ee8bc1a0a1a69cabfba0aa.jpg"
+    ],
+    rooms: [
+      { type: "Deluxe", bedType: "Double Bed", pricePerNight: 17000, maxGuests: 4, totalRooms: 5, availableRooms: 5 },
+    ],
+    availableFrom: "2026-03-20",
+    availableTo: "2026-10-20",
+  },
+  {
+    id: 20,
+    name: "Cedar Heights",
+    city: "Murree",
+    rating: 4.5,
+    stars: 4,
+    isBest: false,
+    locationTag: "Near Pindi Point, Murree",
+    bedType: "Single",
+    images: [
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/4c/e1/27/4ce127d9d3322473adb216d8756d853c.jpg",
+      "https://i.pinimg.com/736x/4b/84/6b/4b846bfdc866361fc725a007a121ece0.jpg",
+      "https://i.pinimg.com/736x/ee/47/cc/ee47ccd2dcd432e757a3f55e5b436472.jpg",
+    ],
+    rooms: [
+      { type: "Standard", bedType: "Single Bed", pricePerNight: 9500, maxGuests: 2, totalRooms: 8, availableRooms: 8 },
+    ],
+    availableFrom: "2026-04-15",
+    availableTo: "2026-09-20",
   },
 ];

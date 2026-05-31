@@ -23,7 +23,7 @@ function HeroSearch() {
   };
 
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md grid gap-4 md:grid-cols-5">
+    <div className="bg-white/80 p-6 rounded-xl shadow-md grid gap-4 md:grid-rows-2">
 
       {/* City */}
       <input
@@ -34,39 +34,11 @@ function HeroSearch() {
         className="border p-2 rounded"
       />
 
-      {/* Checkin */}
-      <input
-        type="date"
-        value={checkIn}
-        onChange={(e) => setCheckIn(e.target.value)}
-        className="border p-2 rounded"
-      />
-
-      {/* Checkout */}
-      <input
-        type="date"
-        value={checkOut}
-        onChange={(e) => setCheckOut(e.target.value)}
-        className="border p-2 rounded"
-      />
-
-      {/* Guests */}
-      <select
-        value={guests}
-        onChange={(e) => setGuests(Number(e.target.value))}
-        className="border p-2 rounded"
-      >
-        {[1, 2, 3, 4, 5].map((g) => (
-          <option key={g} value={g}>
-            {g} Guests
-          </option>
-        ))}
-      </select>
-
+      
       {/* Button */}
       <button
         onClick={handleSearch}
-        className="bg-black text-white rounded"
+        className="bg-black text-white rounded h-10"
       >
         Search
       </button>
