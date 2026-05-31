@@ -75,6 +75,12 @@ function MyBookings() {
               >
                 Cancel
               </button>
+              <button
+                
+                className="bg-green-500 text-white px-4 py-2 rounded-lg"
+              >
+                Pay Now
+              </button>
             </div>
           </div>
         ))}

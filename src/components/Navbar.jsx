@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import {
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/clerk-react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -68,15 +72,25 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop Login */}
-        <button
-          className={`hidden md:block px-5 py-2 rounded-full border transition-all duration-300 ${
-            scrolled
-              ? "border-black text-black hover:bg-black hover:text-white"
-              : "border-white text-white hover:bg-white hover:text-black"
-          }`}
-        >
-          Login
-        </button>
+        <SignedOut>
+  <Link to="/sign-in">
+    <button
+      className={`hidden md:block px-5 py-2 rounded-full border transition-all duration-300 ${
+        scrolled
+          ? "border-black text-black hover:bg-black hover:text-white"
+          : "border-white text-white hover:bg-white hover:text-black"
+      }`}
+    >
+      Login
+    </button>
+  </Link>
+</SignedOut>
+
+<SignedIn>
+  <div className="hidden md:block">
+    <UserButton afterSignOutUrl="/" />
+  </div>
+</SignedIn>
 
         {/* Mobile Icon */}
         <button
@@ -131,9 +145,22 @@ const Navbar = () => {
               Contact Us
             </Link>
 
-            <button className="mt-6 w-full bg-black text-white py-3 rounded-lg">
-              Login
-            </button>
+            <SignedOut>
+  <Link
+    to="/sign-in"
+    onClick={() => setMenuOpen(false)}
+  >
+    <button className="w-full bg-black text-white py-3 rounded-lg">
+      Login
+    </button>
+  </Link>
+</SignedOut>
+
+<SignedIn>
+  <div className="flex justify-center">
+    <UserButton afterSignOutUrl="/" />
+  </div>
+</SignedIn>
           </div>
         </div>
       </div>

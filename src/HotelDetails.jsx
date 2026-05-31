@@ -3,8 +3,12 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useHotel } from "./context/HotelContext";
 import { useBooking } from "./context/BookingContext";
 import Checkbox from "./components/Checkbox";
+import { useUser } from "@clerk/clerk-react";
 
 function HotelDetails() {
+  const { isSignedIn } = useUser();
+
+  const [currentImage, setCurrentImage] = useState(0);
   const { hotels } = useHotel();
   const { addBooking } = useBooking();
   const navigate = useNavigate();
@@ -88,6 +92,16 @@ function HotelDetails() {
 
   // ---------------- BOOKING ----------------
   const handleBooking = () => {
+      if (!isSignedIn) {
+    navigate("/sign-in");
+    return;
+  }
+
+  // 2. DOUBLE SAFETY CHECK (optional but good)
+  if (!isAvailable) {
+    setMessage("Check availability first");
+    return;
+  }
     const booking = {
       id: Date.now(),
       hotelId: hotel.id,
@@ -117,6 +131,97 @@ function HotelDetails() {
       <h1 className="text-4xl font-bold">{hotel.name}</h1>
 
       <p className="text-gray-600 mt-2">{hotel.locationTag}</p>
+      {/* HOTEL GALLERY */}
+<div className="mt-8">
+
+  {/* Mobile Carousel */}
+  <div className="lg:hidden">
+    <div className="relative">
+
+      <img
+        src={hotel.images[currentImage]}
+        alt={hotel.name}
+        className="w-full h-72 sm:h-96 object-cover rounded-2xl"
+      />
+
+      <button
+        onClick={() =>
+          setCurrentImage(
+            currentImage === 0
+              ? hotel.images.length - 1
+              : currentImage - 1
+          )
+        }
+        className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center"
+      >
+        ❮
+      </button>
+
+      <button
+        onClick={() =>
+          setCurrentImage(
+            currentImage === hotel.images.length - 1
+              ? 0
+              : currentImage + 1
+          )
+        }
+        className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center"
+      >
+        ❯
+      </button>
+    </div>
+
+    <div className="flex justify-center gap-2 mt-4">
+      {hotel.images.map((_, index) => (
+        <button
+          key={index}
+          onClick={() => setCurrentImage(index)}
+          className={`w-3 h-3 rounded-full transition ${
+            currentImage === index
+              ? "bg-black"
+              : "bg-gray-300"
+          }`}
+        />
+      ))}
+    </div>
+  </div>
+
+  {/* Desktop Gallery */}
+  <div className="hidden lg:grid grid-cols-2 gap-4">
+
+    <div>
+      <img
+        src={hotel.images[0]}
+        alt={hotel.name}
+        className="w-full h-[500px] object-cover rounded-3xl"
+      />
+    </div>
+
+    <div className="grid grid-cols-2 gap-4">
+
+      <img
+        src={hotel.images[1]}
+        alt=""
+        className="w-full h-[240px] object-cover rounded-2xl hover:scale-105 transition"
+      />
+
+      <img
+        src={hotel.images[2]}
+        alt=""
+        className="w-full h-[240px] object-cover rounded-2xl hover:scale-105 transition"
+      />
+
+      <img
+        src={hotel.images[3]}
+        alt=""
+        className="col-span-2 w-full h-[240px] object-cover rounded-2xl hover:scale-105 transition"
+      />
+
+    </div>
+
+  </div>
+
+</div>
 
       {/* ROOM SELECT */}
       <div className="mt-10">
