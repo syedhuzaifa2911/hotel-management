@@ -3,27 +3,15 @@ import { useNavigate } from "react-router-dom";
 
 function HeroSearch() {
   const navigate = useNavigate();
-
   const [city, setCity] = useState("");
-  const [checkIn, setCheckIn] = useState("");
-  const [checkOut, setCheckOut] = useState("");
-  const [guests, setGuests] = useState(1);
 
   const handleSearch = () => {
     if (!city) return;
-
-    navigate("/hotels", {
-      state: {
-        city,
-        checkIn,
-        checkOut,
-        guests,
-      },
-    });
+    navigate("/hotels", { state: { city } });
   };
 
   return (
-    <div className="bg-white/80 p-6 rounded-xl shadow-md grid gap-4 md:grid-rows-2">
+    <div className="bg-white/80 p-4 sm:p-6 rounded-xl shadow-md flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-xl mx-auto">
 
       {/* City */}
       <input
@@ -31,14 +19,13 @@ function HeroSearch() {
         placeholder="City"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        className="border p-2 rounded"
+        className="border p-2 rounded flex-1 text-sm"
       />
 
-      
       {/* Button */}
       <button
         onClick={handleSearch}
-        className="bg-black text-white rounded h-10"
+        className="bg-black text-white rounded h-10 px-6 text-sm font-medium"
       >
         Search
       </button>
