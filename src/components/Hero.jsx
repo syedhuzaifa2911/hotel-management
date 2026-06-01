@@ -17,7 +17,7 @@ function Hero() {
       <div className="relative z-10 flex items-center min-h-screen">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
 
-          <div className="max-w-3xl">
+          <div className="max-w-3xl flex flex-col items-start">
 
             {/* Badge */}
             <div className="mt-5 hidden">
